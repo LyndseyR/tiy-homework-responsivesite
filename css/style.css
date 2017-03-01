@@ -170,7 +170,7 @@ footer p {
 Media Queries***
 ************************/
 
-@media (min-width: 768px) {
+@media screen and (min-device-width: 768px) {
 
   article {
     width: 100%;
@@ -211,7 +211,7 @@ Media Queries***
 /*Closing Tag for Media Query*/
 }
 
-@media (min-width: 979px) {
+@media screen and (min-device-width: 979px) {
   article {
     width: 80%;
     margin: 10px auto;
