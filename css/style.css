@@ -1,0 +1,219 @@
+/***********************
+Global Style Elements***
+************************/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-transform: none;
+  color: #eee;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/***********************
+Header Navigation ******
+************************/
+
+header nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding: .2em;
+  margin: 0% 3%;
+}
+
+header nav ul {
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.hero {
+  background-image: url("../images/squirrel.jpg");
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+/***********************
+Section With Box Colors*
+************************/
+article {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.box {
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.colorBox {
+  max-width: 100%;
+  padding: 3% 0;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Changes the font styles in the color boxes */
+.colorBox p:nth-of-type(1) {
+  letter-spacing: 2px;
+}
+
+.colorBox p:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.5);
+}
+/************************/
+
+/* Adds color to the background of the list */
+.box li:nth-child(-n+6) {
+  background-color: #eee;
+}
+/************************/
+
+.button {
+  border: 1px solid lightgrey;
+  width: 75px;
+  border-radius: 25px;;
+  padding: 10px;
+  margin: 10px auto;
+  font-weight: 700;
+}
+
+/*Colors of the boxes*/
+.green {
+  background-color: #519251;
+}
+.blue {
+  background-color: #2c4985;
+}
+.black{
+  background-color: black;
+}
+/************************/
+
+.price {
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+.box p {
+  margin: 0;
+}
+
+.box ul li{
+  border-bottom: 1px solid lightgrey;
+  list-style-type: none;
+  padding: 10px;
+}
+
+/***********************
+Section With Text ******
+************************/
+.text {
+  margin: 1em 3em;
+}
+.text div {
+  margin-bottom: 1em;
+}
+
+/***********************
+Footer******************
+************************/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  width: 60%;
+  color: white;
+  font-size: .75em;
+  line-height: 15px;
+}
+
+/***********************
+Media Queries***
+************************/
+
+@media (min-width: 768px) {
+
+  article {
+    width: 100%;
+  }
+
+  /*Navigation Content*/
+  header nav ul li{
+    float: left;
+    padding: .2em;
+    margin: 0% 1%;
+  }
+
+  /*Color Box Content*/
+  .box {
+    width: 31%;
+    float: left;
+    margin: 1%;
+  }
+  .colorBox {
+    font-size: 1em;
+  }
+
+  /*Text Content*/
+  .text {
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .text div {
+    width: 50%;
+    float: left;
+    padding: 2%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .text h2 {
+    font-size: 1.5em;
+  }
+/*Closing Tag for Media Query*/
+}
+
+@media (min-width: 979px) {
+  article {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
